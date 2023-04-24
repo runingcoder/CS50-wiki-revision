@@ -1,5 +1,6 @@
 {% extends "encyclopedia/layout.html" %}
 
+
 {% block title %}
     Encyclopedia
 {% endblock %}
@@ -9,15 +10,18 @@
 <h1>Your results</h1>
 {% else %}
   <h1>All Pages</h1>
-{% endif %}
-   
 
-    <ul>
+{% endif %}
+
+
+    <ol class="flexthis">
         {% for entry in entries %}  
-                <li><a href="{% url 'entry' entry %}">{{entry}}</a></li>
+                <li><a href="{% url 'entry' entry %}">{{entry}} adwfsdaf</a></li>
             
 
         {% endfor %}
-    </ul>
+    </ol>
+   
+
 
 {% endblock %}

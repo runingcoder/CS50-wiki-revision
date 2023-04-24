@@ -35,4 +35,20 @@ textarea {
 
 .sidebar h2 {
     margin-top: 5px;
+  
+    padding-top: 20px;
+ 
+    color:green;
+}
+
+
+h1{
+    text-align: start;
+    color: #1d4272;
+}
+.flexthis{
+    display: flex;
+ 
+    align-items: start;
+    flex-direction: column;
 }
