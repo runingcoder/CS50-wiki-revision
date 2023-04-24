@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block body %}
+<h1>Create New Entry</h1>
+<form method="post">
+  {% csrf_token %}
+  <label for="title">Title:</label><br>
+  <input type="text" id="title" name="title"><br>
+  <label for="content">Content:</label><br>
+  <textarea id="content" name="content" rows="1 " ></textarea><br>
+  <input type="submit" value="Save">
+</form>
+{% if error_message %}  
+<p style="color:red;">{{ error_message }}</p>
+{% endif %}
+{% endblock %}
